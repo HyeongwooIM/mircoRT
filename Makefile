@@ -7,6 +7,8 @@ scene/canvas.c \
 scene/scene.c \
 trace/ray.c \
 utils/vec3_utils.c \
+trace/hit/hit_sphere.c\
+scene/object_create.c\
 main.c
 OBJS = $(SRCS:.c=.o)
 NAME = miniRT
