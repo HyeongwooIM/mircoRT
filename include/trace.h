@@ -16,5 +16,7 @@ t_bool      hit_sphere(t_object *sp_obj, t_ray *ray, t_hit_record *rec);
 void        set_face_normal(t_ray *r, t_hit_record *rec);
 
 t_color3        phong_lighting(t_scene *scene);
+t_color3    point_light_get(t_scene *scene, t_light *light);
+t_bool          in_shadow(t_object *objs, t_ray light_ray, double light_len);
 
 #endif
