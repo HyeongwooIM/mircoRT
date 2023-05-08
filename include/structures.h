@@ -15,6 +15,7 @@ typedef struct s_plane t_plane;
 typedef struct s_cylinder t_cylinder;
 typedef struct s_cylinops t_cylinops;
 typedef struct s_hit_record t_hit_record;
+typedef struct s_mlx t_mlx;
 typedef struct s_scene t_scene;
 
 typedef int             t_bool;
@@ -28,6 +29,9 @@ typedef int             t_object_type;
 # define EPSILON 1e-6 // 0.000001
 # define LUMEN 3  // 이 값을 조절하여 장면의 밝기를 조절할 수 있다.
 
+# define WIDTH	500
+# define HEIGHT	300
+
 struct s_vec3
 {
     double x;
@@ -39,6 +43,16 @@ struct  s_ray
 {
     t_point3    orig;
     t_vec3      dir;
+};
+
+struct	s_mlx {
+	void			*mlx;
+	void			*win;
+	void			*img;
+	char			*addr;
+	int				bits_per_pixel;
+	int				line_length;
+	int				endian;
 };
 
 struct  s_camera
