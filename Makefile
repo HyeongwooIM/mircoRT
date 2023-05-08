@@ -6,6 +6,8 @@ SRCS = $(addprefix ./src/, ${SRCS_FILES})
 
 SRCS_FILES = main.c \
 hit/hit_sphere.c \
+hit/hit_plane.c \
+hit/hit_cylinder.c \
 hit/normal.c \
 utils/vec3_utils.c \
 utils/object_utils.c \
