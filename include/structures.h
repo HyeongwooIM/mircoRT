@@ -26,7 +26,7 @@ typedef int             t_object_type;
 # define PL 1
 # define CY 2
 # define LIGHT_POINT 1
-# define EPSILON 1e-6 // 0.000001
+# define EPSILON 0.001 // 0.000001
 # define LUMEN 3  // 이 값을 조절하여 장면의 밝기를 조절할 수 있다.
 
 # define WIDTH	500
